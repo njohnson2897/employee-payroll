@@ -8,6 +8,7 @@ const addEmployeesBtn = document.querySelector('#add-employees-btn');
 // Collect employee data
 const collectEmployees = function () {
   // TODO: Get user input to create and return an array of employee objects
+  // found information on indefinite while loops at: https://www.youtube.com/watch?v=BR9sBx3LBHU
   let employeesArray = [];
   let moreEmployees = true;
   while (moreEmployees) {
@@ -26,7 +27,6 @@ const collectEmployees = function () {
       return;
     }
   }
-
 }
 
 
@@ -35,6 +35,14 @@ const collectEmployees = function () {
 // Display the average salary
 const displayAverageSalary = function (employeesArray) {
   // TODO: Calculate and display the average salary
+  // found syntax on sum and filter methods https://stackoverflow.com/questions/53106132/find-average-of-an-array-of-objects
+  const salaries = employeesArray.filter(employee => employee.salary);
+  let sum = 0
+  for (let i = 0; i < employee.salary.length; i++){
+    sum += employee.salary[i];
+  }
+  let averageSalary = sum / employee.salary.length;
+  console.log("The average employee salary between our" + employeesArray.length + "employee(s) is" + averageSalary);
 }
 
 
@@ -47,7 +55,8 @@ const displayAverageSalary = function (employeesArray) {
 // Select a random employee
 const getRandomEmployee = function (employeesArray) {
   // TODO: Select and display a random employee
-  // Math.floor(Math.random() * employeesArray.length)
+  const randomEmployee = Math.floor(Math.random() * employeesArray.length)
+  console.log("Congratulations to" + employeesArray[randomEmployee].firstName + employeesArray[randomEmployee].lastName + ", our random drawing winner!")
 }
 
 
