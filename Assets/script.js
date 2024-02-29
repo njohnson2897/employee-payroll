@@ -8,6 +8,7 @@ const collectEmployees = function() {
   const firstName = prompt("Enter first name:");
   const lastName = prompt("Enter last name:");
   const salary = prompt("Enter salary:");
+  const moreEmployees = confirm("Do you want to add another employee?")
   // creates an object "employee" that will store the user input data
   const employee = {
     name: firstName,
@@ -15,12 +16,14 @@ const collectEmployees = function() {
     salary: salary,
   };
   console.log(employee);
-  // create a while loop so user can continue to add employees until they choose cancel
-  const anotherEmployee = confirm("Would you like to add another employee?");
-  while (anotherEmployee === true){
+  // adds a while loop so that the user can continue to add employees
+  while(moreEmployees){
     collectEmployees;
-    return;
+    if (!moreEmployees){
+      return;
+    }
   }
+
 }
 
 // Display the average salary
@@ -31,7 +34,7 @@ const displayAverageSalary = function(employeesArray) {
 // Select a random employee
 const getRandomEmployee = function(employeesArray) {
   // TODO: Select and display a random employee
-  Math.floor(Math.random() * employeesArray.length)
+  // Math.floor(Math.random() * employeesArray.length)
 }
 
 /*
