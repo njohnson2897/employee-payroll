@@ -16,8 +16,8 @@ const collectEmployees = function () {
     let lastName = prompt("Enter last name:");
     let salary = prompt("Enter salary:");
     let employee = {
-      name: firstName,
-      surname: lastName,
+      firstName: firstName,
+      lastName: lastName,
       salary: salary,
     };
     employeesArray.push(employee);
@@ -57,7 +57,7 @@ const getRandomEmployee = function (employeesArray) {
   // TODO: Select and display a random employee
   const randomEmployee = Math.floor(Math.random() * employeesArray.length)
   console.log(randomEmployee);
-  console.log("Congratulations to" + employeesArray[randomEmployee].name + employeesArray[randomEmployee].surname + ", our random drawing winner!");
+  console.log("Congratulations to " + employeesArray[randomEmployee].firstName + employeesArray[randomEmployee].lastName + ", our random drawing winner!");
 }
 
 
