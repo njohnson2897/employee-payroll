@@ -10,7 +10,7 @@ N/A
 To use the webpage, follow [this link](https://njohnson2897.github.io/employee-payroll/)
 
 The following screenshot demonstrates what the page should look like in a browser:
-![payroll webpage screenshot](./Assets/images/payroll-screenshot.JPG)
+![payroll webpage screenshot](./Assets/images/employee-payroll-screenshot.JPG)
 
 ## Credits
 I found information on indefinite while loops at: https://www.youtube.com/watch?v=BR9sBx3LBHU
