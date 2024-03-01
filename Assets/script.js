@@ -6,10 +6,10 @@ const addEmployeesBtn = document.querySelector('#add-employees-btn');
 
 
 // Collect employee data
+let employeesArray = [];
 const collectEmployees = function () {
   // TODO: Get user input to create and return an array of employee objects
   // found information on indefinite while loops at: https://www.youtube.com/watch?v=BR9sBx3LBHU
-  let employeesArray = [];
   let moreEmployees = true;
   while (moreEmployees) {
     let firstName = prompt("Enter first name:");
@@ -24,7 +24,7 @@ const collectEmployees = function () {
     console.log(employeesArray);
     let addAgain = confirm("Do you want to add another employee?");
     if (!addAgain){
-      return;
+      return employeesArray;
     }
   }
 }
@@ -41,7 +41,7 @@ const displayAverageSalary = function (employeesArray) {
   for (let i = 0; i < employee.salary.length; i++){
     sum += employee.salary[i];
   }
-  let averageSalary = sum / employee.salary.length;
+  let averageSalary = sum % employee.salary.length;
   console.log("The average employee salary between our" + employeesArray.length + "employee(s) is" + averageSalary);
 }
 
