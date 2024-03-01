@@ -11,8 +11,12 @@ const collectEmployees = function () {
     let firstName = prompt("Enter first name:");
     let lastName = prompt("Enter last name:");
     let salary = prompt("Enter salary:");
-      if (isNaN(salary)){
+    // found info on isNaN: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/isNaN
+    if (isNaN(salary)){
         salary = 0;
+    // found info on parseInt here: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/parseInt
+      } else  {
+        salary = parseInt(salary);
       }
     let employee = {
       firstName: firstName,
