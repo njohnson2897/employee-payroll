@@ -14,5 +14,7 @@ The following screenshot demonstrates what the page should look like in a browse
 
 ## Credits
 I found information on indefinite while loops at: https://www.youtube.com/watch?v=BR9sBx3LBHU
+
 I also found syntax on sum and filter methods at: https://stackoverflow.com/questions/53106132/find-average-of-an-array-of-objects
+
 Information on isNaN function: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/isNaN
