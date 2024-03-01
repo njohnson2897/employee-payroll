@@ -18,3 +18,5 @@ I found information on indefinite while loops at: https://www.youtube.com/watch?
 I also found syntax on sum and filter methods at: https://stackoverflow.com/questions/53106132/find-average-of-an-array-of-objects
 
 Information on isNaN function: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/isNaN
+
+I also received some help from Juno Nguyen, a tutor with the Northwestern Coding Bootcamp, who helped me simplify my displayAverageSalary function by removing the an unnecessary filter method and instead draw the salary values directly from the array I had already created.

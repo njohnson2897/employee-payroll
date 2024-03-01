@@ -29,7 +29,6 @@ const collectEmployees = function () {
     };
     // pushes each input from the user into an array of objects
     employeesArray.push(employee);
-    console.log(employeesArray);
     let addAgain = confirm("Do you want to add another employee?");
     // ends the series of add employee loops once the user selects "cancel"
     if (!addAgain){
@@ -47,7 +46,6 @@ const displayAverageSalary = function (employeesArray) {
   for (let i = 0; i < employeesArray.length; i++){
     sum += employeesArray[i].salary;
   }
-  console.log(sum);
   // divides the sum above by the length of the salary array to get the average salary
   let averageSalary = sum / employeesArray.length;
   console.log(`The average employee salary between our ${employeesArray.length} employee(s) is ${averageSalary}`);
