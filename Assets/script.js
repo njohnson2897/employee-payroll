@@ -36,13 +36,13 @@ const collectEmployees = function () {
 const displayAverageSalary = function (employeesArray) {
   // TODO: Calculate and display the average salary
   // found syntax on sum and filter methods https://stackoverflow.com/questions/53106132/find-average-of-an-array-of-objects
-  const salaries = employeesArray.filter(employee => employee.salary);
+  const salaries = employeesArray.filter(employeesArray => employeesArray.salary >= 0);
   let sum = 0
-  for (let i = 0; i < employee.salary.length; i++){
-    sum += employee.salary[i];
+  for (let i = 0; i < salaries.length; i++){
+    sum += salaries[i];
   }
-  let averageSalary = sum % employee.salary.length;
-  console.log("The average employee salary between our" + employeesArray.length + "employee(s) is" + averageSalary);
+  let averageSalary = sum / salaries.length;
+  console.log("The average employee salary between our " + salaries.length + " employee(s) is" + averageSalary);
 }
 
 
