@@ -9,7 +9,10 @@ N/A
 ## Usage
 To use the webpage, follow [this link](https://njohnson2897.github.io/employee-payroll/)
 
-The following screenshot demonstrates what the page should look like in a browser:
+The following screenshot demonstrates what the page should look like in a browser when the page first loads:
+![payroll webpage screenshot 2](./Assets/images/employee-payroll-screenshot2.JPG)
+
+To add employees to your payroll table, simply click the "Add Employees" button.  A series of prompts will appear asking for the employee's first name, last name, and salary.  For the salary prompt, only numerical inputs are accepted, otherwise the salary will be inputted at $0.  Following the salary prompt, a final prompt will ask  whether or not you would like to add another employee.  Click "OK" to add  another employee, or cancel to end the table there.  The table should automatically generate and look like this:
 ![payroll webpage screenshot](./Assets/images/employee-payroll-screenshot.JPG)
 
 ## Credits
